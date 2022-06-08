@@ -1,0 +1,12 @@
+*{
+    color: rgb(255, 255, 255);
+	/* font-family: vale; */
+}
+body{
+	background-image: url(wallpaper.jpg);
+	background-attachment: fixed;
+}
+@font-face{
+	font-family: vale;
+    src: url(Charakterny.otf);
+}

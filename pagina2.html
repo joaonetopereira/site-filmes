@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JN Filmes e Seríes</title>
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="Biblioteca/bootstrap.min.css">
+    <link rel="stylesheet" href="Biblioteca/Stely.css">
+    <link rel="stylesheet" href="https://unpkg.com/@glidejs/glide@3.5.2/dist/css/glide.theme.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@glidejs/glide@3.5.2/dist/css/glide.core.min.css">
+
+</head>
+
+<body onload="mostraValor()" id="wallpaper">
+    <div class="container-fluid">
+        <div class="row justify-content-end">
+            <div class="col-2">
+                <div class="row">
+                    <p id="p" style="color: rgb(255, 255, 255);">Bem-vindo, </p>
+                    <a href="cep.html"><input type="button" value="Cadastro"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="col-8 offset-2">
+            <div class="row mt-2">
+                <div class="col-12 card bg-light  mb-5">
+                    <div class="row text-center">
+                        <div class="card-footer">
+                            <h1 class="offser-2">Destaques</h1>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="container">
+                    <div class="glide glide--swipeable">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide"><img src="fotos/MadMaxEstradadaFúria.jpg" class="card-img-top"
+                                        alt="..."></li>
+                                <li class="glide__slide"><img src="fotos/averngers_endegame.jpg" class="card-img-top"
+                                        alt="..."></li>
+                                <li class="glide__slide"><img src="fotos/baki.jpg" class="card-img-top" alt="..."></li>
+                                <li class="glide__slide"><img src="fotos/deadpool.jpg" class="card-img-top" alt="...">
+                                </li>
+                                <li class="glide__slide"><img src="fotos/Duro de Matar.jpg" class="card-img-top"
+                                        alt="..."></li>
+                                <li class="glide__slide"><img src="fotos/deadpool2.jpg" class="card-img-top" alt="...">
+                                </li>
+                                <li class="glide__slide"><img src="fotos/interlistelar.jpg" class="card-img-top"
+                                        alt="..."></li>
+                                <li class="glide__slide"><img src="fotos/joker.jpg" class="card-img-top" alt="..."></li>
+                                <li class="glide__slide"><img src="fotos/Koe No Katachi.jpg" class="card-img-top"
+                                        alt="..."></li>
+                                <li class="glide__slide"><img src="fotos/homems.jpg" class="card-img-top" alt="...">
+                                </li>
+                                <li class="glide__slide"><img src="fotos/the expendables.jpg" class="card-img-top"
+                                        alt="..."></li>
+                                <li class="glide__slide"><img src="fotos/the expendables2.jpg" class="card-img-top"
+                                        alt="..."></li>
+                                <li class="glide__slide"><img src="fotos/the expendables3.jpg" class="card-img-top"
+                                        alt="..."></li>
+                            </ul>
+                        </div>
+                        <!-- <div class="glide__arrows" data-glide-el="controls">
+                                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<" style="background-color: rgba(3, 3, 3, 0.76);">prev</button>
+                                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">" style="background-color: rgba(0, 0, 0, 0.76);">next</button>
+                                </div>  -->
+                    </div>
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide">
+                </script>
+                <script>
+                    const config = {
+                        type: 'carousel',
+                        perView: 5,
+                        autoplay: 1,
+                        hoverpause: true,
+                        animationDuration: 2000,
+                        animationTimingFunc: 'linear',
+                        breakpoints: {
+                            800: {
+                                perView: 2,
+                            }
+                        }
+                    }
+                    new Glide('.glide', config).mount()
+                </script>
+
+                <div class="col-12 card bg-light mt-5">
+                    <div class="row text-center">
+                        <div class="card-footer">
+                            <h1 class="offser-2">Filmes</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-5 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="fotos/interlistelar.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">R$ 7,00</p>
+                                <input name="qt" id="qt0" type="number" min="0" max="10" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="fotos/s_1877830_764432ad.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">R$ 7,00</p>
+                                <input name="qt" id="qt1" type="number" min="0" max="10" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="fotos/s_9419884_b5c82c6d.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">R$ 7,00</p>
+                                <input name="qt" id="qt2" type="number" min="0" max="10" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="fotos/halo.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">R$ 7,00</p>
+                                <input name="qt" id="qt3" type="number" min="0" max="10" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="fotos/homems.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">R$ 7,00</p>
+                                <input name="qt" id="qt4" type="number" min="0" max="10" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="fotos/deadpool2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">R$ 7,00</p>
+                                <input name="qt" id="qt5" type="number" min="0" max="10" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="fotos/deadpool.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">R$ 7,00</p>
+                                <input name="qt" id="qt6" type="number" min="0" max="10" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="fotos/joker.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">R$ 7,00</p>
+                                <input name="qt" id="qt7" type="number" min="0" max="10" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="fotos/Matrix.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">R$ 7,00</p>
+                                <input name="qt" id="qt8" type="number" min="0" max="10" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="fotos/O Poderoso Chefão.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">R$ 7,00</p>
+                                <input name="qt" id="qt9" type="number" min="0" max="10" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="fotos/averngers_endegame.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">R$ 7,00</p>
+                                <input name="qt" id="qt10" type="number" min="0" max="10" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="fotos/djangolivre.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">R$ 7,00</p>
+                                <input name="qt" id="qt11" type="number" min="0" max="10" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="fotos/baki.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">R$ 7,00</p>
+                                <input name="qt" id="qt12" type="number" min="0" max="10" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="fotos/Cidade de Deus.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">R$ 7,00</p>
+                                <input name="qt" id="qt13" type="number" min="0" max="10" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="fotos/Duro de Matar.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">R$ 7,00</p>
+                                <input name="qt" id="qt14" type="number" min="0" max="10" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="fotos/Koe No Katachi.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">R$ 7,00</p>
+                                <input name="qt" id="qt15" type="number" min="0" max="10" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="fotos/the expendables.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">R$ 7,00</p>
+                                <input name="qt" id="qt16" type="number" min="0" max="10" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="fotos/the expendables2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">R$ 7,00</p>
+                                <input name="qt" id="qt17" type="number" min="0" max="10" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="fotos/the expendables3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">R$ 7,00</p>
+                                <input name="qt" id="qt18" type="number" min="0" max="10" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="fotos/MadMaxEstradadaFúria.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">R$ 7,00</p>
+                                <input name="qt" id="qt19" type="number" min="0" max="10" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-3 bg-gradient mt-5 offset-4">
+                    <h6 class="text-center" style="color: rgb(255, 255, 255);">Valor total</h6>
+                    <fieldset disabled>
+                        <input type="text" id="total2" class="form-control">
+                    </fieldset>
+                    <button type="button" onclick="calcularFinal()">verificar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

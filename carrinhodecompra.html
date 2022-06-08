@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de compra</title>
+    <script src="carroCompra.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="stely.css">
+</head>
+
+<body onload="compra()" id="wallpaper">
+    <div class="container">
+        <div class="row ">
+            <div class="col">
+                <a href="pagina2 copy.html" style="text-decoration: none; text-align: center;">
+                    <!-- <center><img src="information-ga9c197e5d_640.png" style="width: 300px; ;" alt=""></center> -->
+                    <h1 id="l">JJ Filmes</h1>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-5">
+            <div class="col-7">
+                <h1>Carrinho de compra</h1>
+                <p id="">valor a pagar <span id="total"> </span> </p>
+                <!-- <input type="text" name="total" id="total"> -->
+                <!-- <input type="button" value="valor"> -->
+                <!-- <a href="pagina2 copy.html"><input style="color:black ;" type="button" value="filmes"></a> -->
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-4">
+            <div class="col-7">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="rb1" checked  onclick="if(document.getElementById('vista').disabled == true)
+                            {
+                                // document.getElementById('vista').disabled = false; 
+                                document.getElementById('parcela').disabled = true;
+                                document.getElementById('cartao').disabled = true;   
+                                document.getElementById('cartao').value = '';
+                                compra()
+                            }
+
+                            else{
+                                // document.getElementById('vista').disabled = true, 
+                                document.getElementById('parcela').disabled = true
+                                document.getElementById('cartao').disabled = true;  
+
+                            }">
+                            <label class="form-check-label" for="vista">
+                                Á vista
+                            </label>
+                            <input type="text" class="form-control" name="vista" id="vista" disabled style=" min-width: 150px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5 mt-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" 
+                            onclick="if(document.getElementById('parcela').disabled == true)
+                            {
+                                document.getElementById('parcela').disabled = false;
+                                // document.getElementById('cartao').disabled = false;  
+                                document.getElementById('vista').disabled = true; 
+                                document.getElementById('vista').value = ''
+                            }
+
+                            else{
+                                // document.getElementById('parcela').disabled = true, 
+                                document.getElementById('vista').disabled = true
+                            }"> 
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Cartão
+                            </label>
+                            <select class="form-select" style="color:black ; min-width:150px ;" aria-label="Default select example" disabled id="parcela" >
+                                <option style="color:black ;" value="1"selected>Parcelas</option>
+                                <option style="color:black ;" value="2">2</option>
+                                <option style="color:black ;" value="3">3</option>
+                                <option style="color:black ;" value="4">4</option>
+                              </select>
+                            <input type="text" class="form-control mt-1" name="cartao" id="cartao" disabled style="min-width:150px ;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
